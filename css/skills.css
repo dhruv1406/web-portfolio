@@ -1,0 +1,87 @@
+
+/* Skills page CSS effects starts here*/
+
+.mySkillsDiv{
+    margin: 5% 7% 5% 7%;
+    padding: 0 14% ;
+}
+
+.mySkillsDiv .mySkills{
+    text-align: center;
+}
+
+.mySkills .mySkillsHead{
+    color: #808080;
+    font-weight: bolder;
+    font-family: "aquatico", "Concert One", cursive;
+}
+
+
+.mySkills .mySkillsIntro{
+    
+    font-size: 1em;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.mySkillsDiv .mySkillsCol{
+    
+    text-align: center;
+}
+.mySkillsCol .skillsList{
+    
+    margin: 25px 10px;
+    /* padding: 25px 0 15px; */
+    
+}
+
+.mySkillsCol .skillsIcons{
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 25px 0;
+    font-size: 5em;
+    color: #ffa500;
+    display: block;
+    
+}
+
+.mySkillsCol .skillsIcons .skillsName{
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+    font-weight: bolder;
+}
+
+
+.mySkillsCol .skillsIcons:hover{
+    background-color:#ffa500;
+    color: black;
+    
+
+}
+
+@media (max-width: 576px){
+    
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .mySkillsDiv{
+        margin: 5% 0;
+        padding: 10% 3% 0;
+    }
+    .mySkillsCol .skillsList{
+        margin: 15px 10px;
+    }
+    .mySkillsCol .skillsIcons{
+        padding: 6px 0 0 0;
+    }
+    .mySkills .mySkillsHead{
+        font-size: 1.5em;
+    }
+    .mySkills .mySkillsIntro{
+    
+        font-size: 0.9em;
+    }
+}

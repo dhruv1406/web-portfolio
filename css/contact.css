@@ -1,0 +1,178 @@
+/* Contact Page Css Effects */
+
+.contactHeadDiv{
+    text-align: center;
+    margin-top:3%;
+}
+
+.contactHeadDiv .contactHeading{
+    
+    color:white;
+    font-weight: bolder;
+
+}
+
+
+.contactFormDiv{
+    padding: 3% 5%;
+    border : 1px solid white;
+    border-radius: 20px;
+    background-color: hsl(213, 19%, 15%);
+    /* position:fixed;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px; */
+    /* visibility:hidden;
+    opacity: 0; */
+    /* transition: 0.4s; */
+}
+
+.blurStart{
+    transition: 0.4s;
+    filter: blur(20px);    
+}
+
+/* .visible{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.4s;
+   
+    top:50%;
+} */
+
+.contactFormDiv img{
+    padding: 11px;
+    margin-bottom:11px;
+    background-color: hsl(213, 19%, 19%);
+    border-radius: 100%;
+
+}
+.contactFormDiv span{
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding-bottom: 3px;
+}
+
+
+.contactDiv .contactMailDiv{
+    margin: 12% 0 0 5%; 
+}
+
+.contactMailDiv .mailEnvelope{
+    max-width: 100%;
+    max-height: 300px;
+    
+}
+
+.contactDiv .contactTable{
+    font-family: "aquatico", "Concert One", cursive;
+    margin: 20% 0 0 10%;
+    border-collapse: separate !important;
+    border-spacing: 10px;
+}
+
+.contactTable th{
+    color:#ffa500;
+}
+
+.contactTable .tableData{
+    padding-left: 20px;
+    color: white;
+}
+
+.contactTable button{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 110px;
+    padding: 2px 0;
+    font-size: 14px;
+    border-bottom: 1px solid white;
+}
+
+
+.contactFormDiv .form-control{
+    font-family: "aquatico", "Concert One", cursive;
+    border-radius: 35px;
+    font-weight: 500;
+    font-size: 0.8em ;
+    padding: 10px 15px;
+    background-color: #e6e6e6;   
+}
+
+.contactFormDiv button{
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 900;
+    background-color: hsl(25, 97%, 53%);
+    font-size: 13px;
+    padding: 11px 10px;
+    width: 300px;
+    /* margin-top: 1%; */
+    border: 1px solid white;
+}
+
+.contactFormDiv button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+
+.contactFormDiv .messageDiv{
+    border-radius: 13px !important;
+}
+
+
+.contactOptionsDiv{
+    font-family: "Concert One", cursive;
+    color: #ffa500;
+    
+}
+
+.contactOptionsDiv button{
+    border: 0 solid white;
+    border-radius: 15px;
+    padding: 4px 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: black;
+}
+
+.contactOptionsDiv .myNumber, .address{
+    color: white;   
+}
+
+
+@media (max-width:992px) {
+    .contactDiv .contactMailDiv {
+        padding-left: 15%;
+    }
+    .contactDiv .contactTable {
+        margin: 20% 0 0 25%;
+        font-size:1.2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .contactDiv .contactTable {
+        margin: 20% 0 0 0%;
+        font-size:0.9rem;
+    }
+}
+
+
+@media (min-width:280px) {
+    .modal-dialog{
+        max-width: 340px !important;
+    }
+
+    .modal-content{
+        border-radius: 20px !important;
+    }
+}
+

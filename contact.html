@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+    <title>Dhrubajit Konwar | Front-End Web Developer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body id="contactBody">
+    <div class="main-container">
+      <div class="sidebar sidebarGo">
+        <div class="hamburger">
+          <i class="fa-solid fa-xmark cross"></i>
+        </div>
+        <ul class="sidebarList">
+          <li class="home"><a href="\">HOME</a></li>
+          <li class="aboutMe"><a href="\aboutme.html">ABOUT ME</a></li>
+          <li class="projects"><a href="\skills.html">SKILLS</a></li>
+          <li class="projects"><a href="\projects.html">PROJECTS</a></li>
+          <li class="contact"><a href="\contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <div class="main" id="contactMain">
+        <div class="navBar">
+          <div class="title">PORTFOLIO</div>
+          <div class="mainMenu">
+            <ul class="sidebarList">
+              <li class="home"><a href="\">HOME</a></li>
+              <li class="aboutMe"><a href="\aboutme.html">ABOUT ME</a></li>
+              <li class="projects"><a href="\skills.html">SKILLS</a></li>
+              <li class="projects"><a href="\projects.html">PROJECTS</a></li>
+              <li class="contact"><a href="\contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="hamburger">
+            <i class="fa-solid fa-bars ham"></i>
+          </div>
+        </div>
+
+        <div class="container-fluid contactDiv">
+          <div class="contactHeadDiv">
+            <h2 class="contactHeading">LETS HAVE A TALK</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="contactMailDiv">
+                <img
+                  class="mailEnvelope"
+                  src="pics/letter.png"
+                  alt="envelope"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <table class="contactTable">
+                <tbody>
+                  <tr>
+                    <th scope="row">Phone No. :</th>
+                    <td class="tableData">+91-6001443974</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Email :</th>
+                    <td class="tableData">
+                      <button
+                        type="button"
+                        id="sendBtn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#contactModal"
+                      >
+                        Click Here
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Address :</th>
+                    <td class="tableData">Saket, New Delhi 110017</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="contactModal"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="container-fluid contactFormDiv" id="contactFormShow">
+              <img src="pics/icon-star.svg" alt="star" />
+              <span>Get In Touch.</span>
+              <form method="post" onsubmit="sendEmail(); return false">
+                <div class="row g-3">
+                  <div class="col-md-12">
+                    <input
+                      type="text"
+                      name="fName"
+                      class="form-control"
+                      id="firstName"
+                      placeholder="First Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <input
+                      type="text"
+                      name="lName"
+                      class="form-control"
+                      id="lastName"
+                      placeholder="Last Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <!-- <input class="form-control" id="message" placeholder="Your Message"></> -->
+                    <textarea
+                      class="form-control messageDiv"
+                      name="msg"
+                      id="yourMessage"
+                      rows="4"
+                      placeholder="Your Message"
+                    ></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" id="contactFormBtn">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelector(".mailEnvelope"), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>

@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+@font-face {
+  font-family: "aquatico";
+  src: url("/home/dhruv/Personal WORK/My Portfolio Site/Font/aquatico-cufonfonts-webfont.eot"); /* IE9 Compat Modes */
+  src: url("/home/dhruv/Personal WORK/My Portfolio Site/Font/aquatico-cufonfonts-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("/home/dhruv/Personal WORK/My Portfolio Site/Font/aquatico-cufonfonts-webfont.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("/home/dhruv/Personal WORK/My Portfolio Site/Font/aquatico-cufonfonts-webfont.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */
+      url("/home/dhruv/Personal WORK/My Portfolio Site/Font/aquatico-cufonfonts-webfont.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("/home/dhruv/Personal WORK/My Portfolio Site/Font/aquatico-cufonfonts-webfont.svg#svgaquatico")
+      format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Main Div container CSS effets */
+
+.main-container {
+  display: flex;
+  height: 100vh;
+  width: auto;
+  user-select: none;
+}
+
+/* Sidebar CSS effects starts*/
+.main-container .sidebar {
+  font-family: "aquatico", "Concert One", cursive;
+  background-color: black;
+  width: 200px;
+  padding-top: 60px;
+  transition: transform 0.3s ease-out;
+  position: fixed;
+  right: 0;
+  z-index: 2;
+  height: 100vh;
+  border-left: 2px solid white;
+  border-radius: 30px;
+  overflow-x: hidden;
+}
+
+.hamburger .cross {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  /* left: 170px; */
+  font-size: 2em;
+  color: #ffa500;
+}
+
+.sidebarGo {
+  /* display: none; */
+  transform: translateX(300px);
+}
+.main-container .sidebar ul {
+  padding-left: 0;
+}
+
+.main-container .sidebar li {
+  list-style: none;
+  line-height: 5;
+  margin-top: 10px;
+}
+
+.main-container .sidebar li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  /* text-align: center; */
+  display: block;
+  padding-left: 55px;
+}
+
+.main-container .sidebar li a:hover {
+  background: #ffa500;
+  border-radius: 10px 70px 10px 70px;
+  color: black;
+}
+
+/* Sidebar css effects Ends */
+/* linear-gradient(270deg, #1F000F 10% , #09043A 80%); */
+
+/* content container css effects starts */
+.main {
+  /* border: 1px solid black; */
+  /* display: flex; */
+  width: 100%;
+  background-color: black;
+  position: relative;
+  padding-bottom: 10.5%;
+  /* margin-bottom: 11%; */
+}
+
+.navBar {
+  display: flex;
+}
+
+.navBar .title {
+  font-family: "aquatico", "Concert One", cursive;
+  color: #ffa500;
+  font-weight: bolder;
+  flex: 0.3;
+  padding: 20px 0 0 20px;
+  font-size: 1em;
+}
+
+.navBar .hamburger i {
+  /* color: white; */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  /* margin-top: 15px; */
+  cursor: pointer;
+}
+
+.navBar .hamburger .ham {
+  color: #ffa500;
+  font-size: 1.7em;
+}
+
+.navBar .mainMenu {
+  margin-top: 20px;
+  flex: 0.4;
+}
+.mainMenu .sidebarList {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  justify-content: space-between;
+}
+
+.sidebarList li {
+  list-style: none;
+}
+
+.mainMenu .sidebarList li a {
+  font-family: "aquatico", "Concert One", cursive;
+  text-decoration: none;
+  color: white;
+  padding: 0 15px 5px 15px;
+  font-size: 12.3px;
+  font-weight: bolder;
+}
+
+.mainMenu .sidebarList li a:hover {
+  padding: 0 15px 10px 15px;
+  /* background-color: red; */
+  border-radius: 0 0 12px 12px;
+  border-bottom: 2px solid #ffa500;
+  color: #ffa500;
+}
+
+/* additional */
+.main .introContent {
+  padding-top: 50px;
+}
+
+.main .introContent .intro {
+  font-family: "Dosis", sans-serif;
+  color: white;
+  /* flex:0.7; */
+  margin: 15% 10% 8% 10%;
+}
+.introContent .intro .introTag {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding-left: 20px;
+  
+}
+
+.introContent .intro .name {
+  font-weight: 700;
+  font-size: 4em;
+  padding-left: 13px;
+  border-left: 5px solid #ffa500;
+  border-radius: 10px;
+  
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #ffa500;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left:3px;
+}
+
+.introContent .intro .introPara {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding-left: 20px;
+  font-size: 1em;
+}
+
+.intro .buttons {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.buttons button {
+  border: 0 solid white;
+  border-radius: 15px;
+  padding: 4px 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+
+  color: black;
+}
+
+.buttons button a{
+    text-decoration: none;
+    color: black;
+}
+
+.buttons .resume {
+  margin-left: 17px;
+}
+
+.intro .buttons button:hover {
+  transform: scale(1.1);
+  border-bottom: 2px solid white;
+  background-color: #ffa500;
+}
+
+.introContent .imgdiv {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.mainImg {
+  /* position: absolute; */
+  max-width: 100%;
+  max-height: 340px;
+  border: 5px solid #ffa500;
+  border-radius: 67% 32% 48% 52% / 76% 75% 26% 26%;
+  /* box-shadow: 3px 5px  */
+}
+
+/* .bottom {
+   margin-top: 15%;
+}
+.bottom .copyright{
+    font-family:'aquatico', 'Concert One', cursive;
+   text-align: center;
+   color: #FFA500;
+   font-size: 0.8em;
+} */
+
+@media (max-width: 1024px) {
+  .navBar .title {
+    display: none;
+  }
+  .navBar .mainMenu {
+    margin-top: 20px;
+    flex: 0.6;
+  }
+  .introContent .intro .name {
+    font-size: 3.3em;
+  }
+
+  .introContent .intro .introPara {
+    font-size: 1.5em;
+  }
+  .mainImg {
+    max-height: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navBar .title {
+    display: block;
+  }
+  .navBar .mainMenu {
+    display: none;
+  }
+  .introTag {
+    font-weight: 600;
+  }
+
+  .introContent .intro .name {
+    font-size: 3em;
+  }
+
+  .introContent .intro .introPara {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-container .main .introContent .intro .name {
+    font-size: 2.3em;
+  }
+  .introTag {
+    font-size: 15px;
+  }
+  .main-container .main .introContent .intro .introPara {
+    font-size: 0.9em;
+  }
+  .buttons button {
+    padding: 2px 15px;
+    font-size: 1em;
+  }
+  .mainImg {
+    max-height: 250px;
+  }
+}

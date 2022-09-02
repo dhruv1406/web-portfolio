@@ -1,0 +1,85 @@
+/* About ME page CSS Starts Here */
+
+.mainAboutDiv{
+    margin-top: 50px;
+}
+
+.aboutDiv{
+    margin: 15% 10% 8% 10%;
+    
+}
+
+.aboutDiv .aboutHead{
+    font-family: "aquatico", "Concert One", cursive;
+    color: #808080;
+    font-weight: bolder;
+}
+
+.aboutDiv .aboutHead span {
+    color:#ffa500
+}
+
+
+.aboutDiv .aboutIntro{
+    margin-top: 5%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
+.aboutIntro i{
+    color: #ffa500;
+    font-size:1.4rem;
+}
+
+.aboutImgDiv{
+    text-align: center;
+    margin-top: 7%;
+
+}
+.aboutImg{
+    max-width: 100%;
+    max-height: 340px;
+    /* border: 2px solid white; */
+    background-color: #ffa500;
+    border-radius: 67% 32% 48% 52% / 76% 75% 26% 26%;
+    /* box-shadow: 1px 1px 30px grey; */
+   
+}
+
+@media (max-width: 990px) {
+    
+    .reverse{
+        flex-direction:column-reverse;
+    }
+    .aboutDiv{
+        margin: 10% 10% 8% 10%;
+        
+    }
+}
+
+@media (max-width:1204px){
+    .aboutDiv .aboutHead{
+        
+        font-size: 1.9em;
+        
+    }
+    
+}
+
+@media (max-width:576px){
+    .aboutDiv .aboutHead{
+        
+        font-size: 1.3em;
+        
+    }
+    .aboutImg{
+        max-width: 100%;
+        max-height: 290px;   
+    }
+    .aboutDiv .aboutIntro{
+        font-size: 0.9em
+        
+    
+    }
+}
