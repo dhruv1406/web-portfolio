@@ -28,11 +28,23 @@
   
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
+html{
+  scrollbar-width: none;
+}
+
+body{
+  -ms-overflow-style: none;
+}
+
 /* Main Div container CSS effets */
 
 .main-container {
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
   width: auto;
   user-select: none;
 }
@@ -55,6 +67,7 @@
 
 .hamburger .cross {
   position: absolute;
+  cursor: pointer;
   top: 10px;
   left: 10px;
   /* left: 170px; */
@@ -91,22 +104,22 @@
   color: black;
 }
 
-/* Sidebar css effects Ends */
-/* linear-gradient(270deg, #1F000F 10% , #09043A 80%); */
 
-/* content container css effects starts */
 .main {
-  /* border: 1px solid black; */
-  /* display: flex; */
   width: 100%;
   background-color: black;
   position: relative;
   padding-bottom: 10.5%;
-  /* margin-bottom: 11%; */
+  
 }
 
 .navBar {
+  background-color: black;
   display: flex;
+  height: 60px;
+  position:sticky;
+  z-index: 1;
+  top: 0;  
 }
 
 .navBar .title {
@@ -114,14 +127,16 @@
   color: #ffa500;
   font-weight: bolder;
   flex: 0.3;
-  padding: 20px 0 0 20px;
-  font-size: 1.5em;
+  padding: 15px 0 0 20px;
+  font-size: 1.3em;
 }
+
+
 
 .navBar .hamburger i {
   /* color: white; */
   position: absolute;
-  top: 20px;
+  top: 15px;
   right: 20px;
   /* margin-top: 15px; */
   cursor: pointer;
@@ -148,6 +163,7 @@
 }
 
 .mainMenu .sidebarList li a {
+  display: block;
   font-family: "aquatico", "Concert One", cursive;
   text-decoration: none;
   color: white;
@@ -166,7 +182,7 @@
 
 /* additional */
 .main .introContent {
-  padding-top: 50px;
+  padding: 110px 0;
 }
 
 .main .introContent .intro {
