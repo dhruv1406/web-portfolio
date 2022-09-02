@@ -1,21 +1,26 @@
+.projectDiv{
+  padding: 5% 0;
+}
+
+
 .projectHead h1 {
-  font-size: 1.5rem;
-  color: gray;
+  font-size: 2rem;
+  color: white;
   margin: auto;
   font-weight: bolder;
   text-align: center;
-  margin-top: 5px;
 }
 
 .projectContent {
-  margin: 1% 15%;
+  margin: 0 15%;
+  padding-top: 20px;
 }
 
 .center {
   margin: auto;
 }
 
-.contentMain {
+.projectDiv .contentMain {
   position: relative;
   width: 230px;
   height: 230px;
@@ -28,7 +33,7 @@
   border-radius: 20px;
 }
 
-video {
+.contentMain video {
   position: absolute;
   object-fit: cover;
   top: 0;
@@ -38,7 +43,7 @@ video {
   opacity: 0.7;
 }
 
-.content {
+.contentMain .content {
   position: relative;
   color: white;
   font-weight: bolder;
