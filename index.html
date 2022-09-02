@@ -19,6 +19,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/aboutme.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body>
     <div class="main-container">
@@ -28,23 +32,23 @@
         </div>
         <ul class="sidebarList">
           <li class="home"><a href="\">HOME</a></li>
-          <li class="aboutMe"><a href="\aboutme.html">ABOUT ME</a></li>
-          <li class="skills"><a href="\skills.html">SKILLS</a></li>
-          <li class="projects"><a href="\projects.html">PROJECTS</a></li>
-          <li class="contact"><a href="\contact.html">CONTACT</a></li>
+          <li class="aboutMe"><a href="#aboutMe">ABOUT</a></li>
+          <li class="skills"><a href="#skills">SKILLS</a></li>
+          <li class="projects"><a href="#project">PROJECTS</a></li>
+          <li class="contact"><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
 
-      <div class="main">
+      <div class="main" id="main">
         <div class="navBar">
           <div class="title">PORTFOLIO</div>
           <div class="mainMenu">
             <ul class="sidebarList">
               <li class="home"><a href="\">HOME</a></li>
-              <li class="aboutMe"><a href="\aboutme.html">ABOUT ME</a></li>
-              <li class="skills"><a href="\skills.html">SKILLS</a></li>
-              <li class="projects"><a href="\projects.html">PROJECTS</a></li>
-              <li class="contact"><a href="\contact.html">CONTACT</a></li>
+              <li class="aboutMe"><a href="#aboutMe">ABOUT ME</a></li>
+              <li class="skills"><a href="#skills">SKILLS</a></li>
+              <li class="projects"><a href="#project">PROJECTS</a></li>
+              <li class="contact"><a href="#contact">CONTACT</a></li>
             </ul>
           </div>
           <div class="hamburger">
@@ -52,6 +56,7 @@
           </div>
         </div>
 
+        <!-- Hero Page start here -->
         <div class="container-fluid">
           <div class="row introContent">
             <div class="col-lg-6">
@@ -65,7 +70,7 @@
                 </p>
                 <div class="buttons">
                   <button class="contactMe">
-                    <a href="\aboutme.html">Learn More</a>
+                    <a href="#aboutMe">Learn More</a>
                   </button>
                   <button class="resume">
                     <a href="resume.pdf" target="_blank">Download CV</a>
@@ -84,7 +89,287 @@
             </div>
           </div>
         </div>
+        <!-- hero page ends here -->
+
+        <!-- about me page start here -->
+        <div class="container-fluid" id="aboutMe">
+          <div class="mainAboutDiv">
+            <div class="row reverse">
+              <div class="col-lg-6">
+                <div class="aboutDiv">
+                  <h2 class="aboutHead">
+                    <span>THANKS </span>FOR STOPPING BY<span class="dot"></span>
+                  </h2>
+                  <p class="aboutIntro">
+                    Namaste <i class="fa-solid fa-hands-praying"></i> , I am
+                    Dhrubajit konwar. An aspiring software developer. I am
+                    Passionate about exploring, learning and creating web and
+                    Responsive websites. I have worked on some projects where I
+                    Have utilized my skills to checked my abilities. I love to
+                    Listen to slow reverb songs while I am coding. Currently
+                    Looking for an organization where I can join and utilize my
+                    Skills and abilities to help both the company and myself
+                    grow And excel in the field.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="aboutImgDiv">
+                  <img
+                    class="aboutImg"
+                    src="pics/dhruvImg.png"
+                    alt="dhrubajit_img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- about me page ends here -->
+
+        <!-- skills page start here -->
+        <div class="container-fluid mySkillsMainDiv" id="skills">
+          <div class="mySkillsDiv">
+            <div class="mySkills">
+              <h2 class="mySkillsHead">WHAT I AM GOOD AT</h2>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-lg-4 col-sm-6 mySkillsCol">
+                <div class="skillsList">
+                  <i class="fa-brands skillsIcons fa-html5"
+                    ><p class="skillsName">HTML</p></i
+                  >
+                </div>
+              </div>
+              <div class="col-lg-4 col-lg-4 col-sm-6 mySkillsCol">
+                <div class="skillsList">
+                  <i class="fa-brands skillsIcons fa-css3-alt">
+                    <p class="skillsName">CSS</p>
+                  </i>
+                </div>
+              </div>
+              <div class="col-lg-4 col-lg-4 col-sm-6 mySkillsCol">
+                <div class="skillsList">
+                  <i class="fa-brands skillsIcons fa-square-js">
+                    <p class="skillsName">JAVASCRIPT</p>
+                  </i>
+                </div>
+              </div>
+              <div class="col-lg-4 col-lg-4 col-sm-6 mySkillsCol">
+                <div class="skillsList">
+                  <i class="fa-brands skillsIcons fa-python">
+                    <p class="skillsName">PYTHON</p>
+                  </i>
+                </div>
+              </div>
+              <div class="col-lg-4 col-lg-4 col-sm-6 mySkillsCol">
+                <div class="skillsList">
+                  <i class="fa-brands skillsIcons fa-react">
+                    <p class="skillsName">REACT</p>
+                  </i>
+                </div>
+              </div>
+              <div class="col-lg-4 col-lg-4 col-sm-6 mySkillsCol">
+                <div class="skillsList">
+                  <i class="fa-brands skillsIcons fa-github">
+                    <p class="skillsName">GITHUB</p>
+                  </i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- skills page ends here -->
+
+        <!-- Projects page start here -->
+        <div class="container-fluid" id="project">
+          <div class="projectDiv">
+            <div class="projectHead">
+              <h1>PROJECTS</h1>
+            </div>
+            <div class="row g-4 projectContent">
+              <div class="col-lg-4 col-md-6">
+                <div class="contentMain center">
+                  <video autoplay muted loop poster="cake.jpg">
+                    <source src="pics/portfolio.webm" type="video/webm" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="content">
+                    <h4>PORTFOLIO</h4>
+                    <p>
+                      A Web Portfolio design and created using HTML, CSS, JS and
+                      BOOTSTRAP. Currently planning to modify the whole project
+                      using REACT and TAILWIND CSS.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="contentMain center">
+                  <video autoplay muted loop poster="cake.jpg">
+                    <source src="pics/moviesland.webm" type="video/webm" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="content">
+                    <h4>MOVIES-LAND</h4>
+                    <p>
+                      A React and CSS based website which returns the movies
+                      poster and other details like name, year and type on
+                      search by using API.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="contentMain center">
+                  <video autoplay muted loop poster="cake.jpg">
+                    <source src="pics/components.webm" type="video/webm" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="content">
+                    <h4>CARDS</h4>
+                    <p>
+                      A minor and simple project based on HTML CSS AND BOOTSTRAP
+                      to create new rating card and product card details modal.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="contentMain center">
+                  <video autoplay muted loop poster="cake.jpg">
+                    <source src="pics/magic-notes.webm" type="video/webm" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="content">
+                    <h4>MAGIC-NOTES</h4>
+                    <p>
+                      A simple and first project based on JavaScript and
+                      Bootstrap to create book store website and and Daily
+                      routines notes website.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- projects page ends here -->
+
+        <!-- Contact me page starts here -->
+        <div class="container-fluid" id="contact">
+          <div class="contactDiv">
+            <div class="contactHeadDiv">
+              <h2 class="contactHeading">LETS HAVE A TALK</h2>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="contactMailDiv">
+                  <img
+                    class="mailEnvelope"
+                    src="pics/letter.png"
+                    alt="envelope"
+                  />
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <table class="contactTable">
+                  <tbody>
+                    <tr>
+                      <th scope="row">Phone No. :</th>
+                      <td class="tableData">+91-6001443974</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Email :</th>
+                      <td class="tableData">
+                        <button
+                          type="button"
+                          id="sendBtn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#contactModal"
+                        >
+                          Click Here
+                        </button>
+                        
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Address :</th>
+                      <td class="tableData">Saket, New Delhi 110017</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div
+        class="modal fade"
+        id="contactModal"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="container-fluid contactFormDiv" id="contactFormShow">
+              <img src="pics/icon-star.svg" alt="star" />
+              <span>Get In Touch.</span>
+              <form method="post" onsubmit="sendEmail(); return false">
+                <div class="row g-3">
+                  <div class="col-md-12">
+                    <input
+                      type="text"
+                      name="fName"
+                      class="form-control"
+                      id="firstName"
+                      placeholder="First Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <input
+                      type="text"
+                      name="lName"
+                      class="form-control"
+                      id="lastName"
+                      placeholder="Last Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <!-- <input class="form-control" id="message" placeholder="Your Message"></> -->
+                    <textarea
+                      class="form-control messageDiv"
+                      name="msg"
+                      id="yourMessage"
+                      rows="4"
+                      placeholder="Your Message"
+                    ></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" id="contactFormBtn">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact me page ends here -->
     </div>
 
     <script
@@ -103,5 +388,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".skillsIcons"), {
+        max: 25,
+        speed: 400,
+        scale: 1.1,
+      });
+    </script>
   </body>
 </html>
