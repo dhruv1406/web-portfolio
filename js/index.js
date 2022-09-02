@@ -1,21 +1,11 @@
 // JS for Modal And BG Blur....
 var sendBtn = document.getElementById("sendBtn");
 var contactForm = document.getElementById("contactFormShow");
-var main = document.getElementById("contactMain");
+var main = document.getElementById("main");
 var submitBtn = document.getElementById("contactFormBtn");
 var show = document.getElementById("contactModal");
 var thanks = document.getElementById("thanksModal");
-// var emailS = document.getElementById("email").value;
-// var fname = document.getElementById("firstName").value;
-// var lname = document.getElementById("lastName").value;
-// var yourMessage = document.getElementById("yourMessage").value;
-// var body =
-//   "Name: " +
-//   fname +
-//   "<br> Email Id: " +
-//   emailS +
-//   "<br> Message : " +
-//   yourMessage;
+
 
 // For SIDEBARS Buttons....
 document.querySelector(".ham").addEventListener("click", () => {
