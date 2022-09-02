@@ -81,7 +81,7 @@ video {
     height: 150px;
   }
   .content {
-    transform: translateY(100px);
+    transform: translateY(107px);
   }
   .projectContent {
     margin: 3% 10%;
@@ -96,6 +96,7 @@ video {
 
   .content p {
     font-size: 10px;
+    padding: 0 20px;
   }
 }
 
