@@ -47,7 +47,7 @@
   position: relative;
   color: white;
   font-weight: bolder;
-  transform: translateY(139px);
+  transform: translateY(135px);
   transition: transform 500ms;
   background: rgba(78, 76, 76, 0.9);
   padding: 4px;
