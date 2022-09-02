@@ -50,7 +50,8 @@
   transform: translateY(135px);
   transition: transform 500ms;
   background: rgba(78, 76, 76, 0.9);
-  padding: 4px;
+  padding: 5px;
+  height: 135px;
   border-radius: 15px;
   border-top: 2px solid white;
 }
