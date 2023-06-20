@@ -128,51 +128,38 @@
         <!-- about me page ends here -->
 
         <!-- skills page start here -->
-        <div class="container-fluid mySkillsMainDiv" id="skills">
+        <div class="mySkillsMainDiv" id="skills">
           <div class="mySkillsDiv">
             <div class="mySkills">
-              <h2 class="mySkillsHead">WHAT I AM GOOD AT</h2>
+              <h2 class="mySkillsHead">SKILLS? Got Some...</h2>
             </div>
-            <div class="row">
-              <div class="col-lg-4 col-lg-4 col-sm-6 mySkillsCol">
+            <div class="skillMain">
+              <div class="mySkillsCol">
                 <div class="skillsList">
                   <i class="fa-brands skillsIcons fa-html5"
                     ><p class="skillsName">HTML</p></i
                   >
                 </div>
               </div>
-              <div class="col-lg-4 col-lg-4 col-sm-6 mySkillsCol">
+              <div class="mySkillsCol">
                 <div class="skillsList">
                   <i class="fa-brands skillsIcons fa-css3-alt">
                     <p class="skillsName">CSS</p>
                   </i>
                 </div>
               </div>
-              <div class="col-lg-4 col-lg-4 col-sm-6 mySkillsCol">
+              <div class="mySkillsCol">
                 <div class="skillsList">
                   <i class="fa-brands skillsIcons fa-square-js">
                     <p class="skillsName">JAVASCRIPT</p>
                   </i>
                 </div>
               </div>
-              <div class="col-lg-4 col-lg-4 col-sm-6 mySkillsCol">
-                <div class="skillsList">
-                  <i class="fa-brands skillsIcons fa-python">
-                    <p class="skillsName">PYTHON</p>
-                  </i>
-                </div>
-              </div>
-              <div class="col-lg-4 col-lg-4 col-sm-6 mySkillsCol">
+            
+              <div class="mySkillsCol">
                 <div class="skillsList">
                   <i class="fa-brands skillsIcons fa-react">
                     <p class="skillsName">REACT</p>
-                  </i>
-                </div>
-              </div>
-              <div class="col-lg-4 col-lg-4 col-sm-6 mySkillsCol">
-                <div class="skillsList">
-                  <i class="fa-brands skillsIcons fa-github">
-                    <p class="skillsName">GITHUB</p>
                   </i>
                 </div>
               </div>
@@ -182,30 +169,26 @@
         <!-- skills page ends here -->
 
         <!-- Projects page start here -->
-        <div class="container-fluid" id="project">
+        <div class="projectMain" id="project">
           <div class="projectDiv">
             <div class="projectHead">
               <h1>PROJECTS</h1>
             </div>
-            <div class="row g-4 projectContent">
-              <div class="col-lg-4 col-md-6">
-                <div class="contentMain center">
+            <div class="projectContent">
+                <div class="contentMain">
                   <video autoplay muted loop poster="cake.jpg">
-                    <source src="pics/portfolio.webm" type="video/webm" />
+                    <source src="pics/DRUM-RYTHM.webm" type="video/webm" />
                     Your browser does not support the video tag.
                   </video>
                   <div class="content">
-                    <h4>PORTFOLIO</h4>
+                    <h4>DRUM-RYTHM</h4>
                     <p>
-                      A Web Portfolio design and created using HTML, CSS, JS and
-                      BOOTSTRAP. Currently planning to modify the whole project
-                      using REACT and TAILWIND.
+                      Designed and developed a website showcasing a wide range of drum kits using
+                      HTML, CSS, and JavaScript.
                     </p>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="contentMain center">
+                <div class="contentMain">
                   <video autoplay muted loop poster="cake.jpg">
                     <source src="pics/moviesland.webm" type="video/webm" />
                     Your browser does not support the video tag.
@@ -219,9 +202,7 @@
                     </p>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="contentMain center">
+                <div class="contentMain">
                   <video autoplay muted loop poster="cake.jpg">
                     <source src="pics/components.webm" type="video/webm" />
                     Your browser does not support the video tag.
@@ -234,9 +215,7 @@
                     </p>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="contentMain center">
+                <div class="contentMain">
                   <video autoplay muted loop poster="cake.jpg">
                     <source src="pics/magic-notes.webm" type="video/webm" />
                     Your browser does not support the video tag.
@@ -250,7 +229,6 @@
                     </p>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>
@@ -311,33 +289,24 @@
         tabindex="-1"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
+        <div class="modal-dialog modal-dialog-ed">
+          <div class="modal-content alert">
             <div class="container-fluid contactFormDiv" id="contactFormShow">
-<!--               <img src="pics/icon-star.svg" alt="star" />
+              <img src="pics/icon-star.svg" alt="star" />
               <span>Get In Touch.</span>
-              <form method="post" onsubmit="sendEmail(); return false">
+              <form action="https://formsubmit.co/d1b0cfcb68a333f76468bb75a75a578b" method="POST">
                 <div class="row g-3">
                   <div class="col-md-12">
                     <input
                       type="text"
-                      name="fName"
+                      name="name"
                       class="form-control"
-                      id="firstName"
-                      placeholder="First Name"
+                      id="name"
+                      placeholder="Name"
                       required
                     />
                   </div>
-                  <div class="col-md-12">
-                    <input
-                      type="text"
-                      name="lName"
-                      class="form-control"
-                      id="lastName"
-                      placeholder="Last Name"
-                      required
-                    />
-                  </div>
+    
                   <div class="col-md-12">
                     <input
                       type="email"
@@ -349,10 +318,9 @@
                     />
                   </div>
                   <div class="col-md-12">
-                    <!-- <input class="form-control" id="message" placeholder="Your Message"></> -->
-<!--                     <textarea
+                    <textarea
                       class="form-control messageDiv"
-                      name="msg"
+                      name="message"
                       id="yourMessage"
                       rows="4"
                       placeholder="Your Message"
@@ -363,10 +331,14 @@
                       Send Message
                     </button>
                   </div>
-                </div> -->
-              </form> -->
-              <h4 class="service">Oops!!! This service is not yet working.</h4>
+                  <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+                  <input type="hidden" name="_template" value="table">
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_next" value="https://dhruv1406.github.io/web-portfolio/">
+                </div>
+              </form>
             </div>
+            <!-- <h4 class="service">Oops!!! This service is not yet working.</h4> -->
           </div>
         </div>
       </div>
@@ -388,7 +360,9 @@
       integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
       crossorigin="anonymous"
     ></script>
-    <script src="js/index.js"></script>
+    <script src="js/index.js"></script><script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
 <!--     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
     <script>
       VanillaTilt.init(document.querySelectorAll(".skillsIcons"), {

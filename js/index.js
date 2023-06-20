@@ -30,27 +30,27 @@ document.body.addEventListener("click", (event) => {
 });
 
 // For On Message Submit......
-function sendEmail() {
-  var fname = document.getElementById("firstName").value;
-  var lname = document.getElementById("lastName").value;
-  var emailS = document.getElementById("email").value;
-  var yourMessage = document.getElementById("yourMessage").value;
-  var body =
-    "Name: " +
-    fname +
-    " " +
-    lname +
-    "<br> Email Id: " +
-    emailS +
-    "<br> Message : " +
-    yourMessage;
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "dhruvkonwar95@gmail.com",
-    Password: "DF60E9E4C188AC0B1F53169EE91933E2AC09",
-    To: "dhruvkonwar95@gmail.com",
-    From: emailS,
-    Subject: "New Mail",
-    Body: body,
-  }).then(message => alert(message));
-}
+// function sendEmail() {
+//   var fname = document.getElementById("firstName").value;
+//   var lname = document.getElementById("lastName").value;
+//   var emailS = document.getElementById("email").value;
+//   var yourMessage = document.getElementById("yourMessage").value;
+//   var body =
+//     "Name: " +
+//     fname +
+//     " " +
+//     lname +
+//     "<br> Email Id: " +
+//     emailS +
+//     "<br> Message : " +
+//     yourMessage;
+//   Email.send({
+//     Host: "smtp.elasticemail.com",
+//     Username: "dhruvkonwar95@gmail.com",
+//     Password: "DF60E9E4C188AC0B1F53169EE91933E2AC09",
+//     To: "dhruvkonwar95@gmail.com",
+//     From: "http://127.0.0.1:5500/",
+//     Subject: "New Mail",
+//     Body: body,
+//   }).then(message => alert(message));
+// }

@@ -2,8 +2,8 @@
 /* Skills page CSS effects starts here*/
 
 .mySkillsDiv{
-    margin: 5% 7% 5% 7%;
-    padding: 5% 14% ;
+    /* margin: 5% 0; */
+    padding: 5% 5% ;
 }
 
 .mySkillsDiv .mySkills{
@@ -24,15 +24,17 @@
     color: white;
     font-family: "Poppins", sans-serif;
 }
-
-.mySkillsDiv .mySkillsCol{
-    
+.skillMain{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skillMain .mySkillsCol{
+    flex: 24%;
     text-align: center;
 }
 .mySkillsCol .skillsList{
     
-    margin: 25px 10px;
-    /* padding: 25px 0 15px; */
+    margin: 5px 5px;
     
 }
 
@@ -61,28 +63,18 @@
     
 
 }
+@media screen and (max-width: 992px) {
+    .skillMain .mySkillsCol{
+      margin: 5px;
+      flex: 48%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .skillMain{
+      flex-direction: column;
+    }
+    
+  }
 
-@media (max-width: 576px){
-    
-    .col-sm-6 {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-    .mySkillsDiv{
-        margin: 5% 0;
-        padding: 10% 3% 0;
-    }
-    .mySkillsCol .skillsList{
-        margin: 15px 10px;
-    }
-    .mySkillsCol .skillsIcons{
-        padding: 6px 0 0 0;
-    }
-    .mySkills .mySkillsHead{
-        font-size: 1.5em;
-    }
-    .mySkills .mySkillsIntro{
-    
-        font-size: 0.9em;
-    }
-}
