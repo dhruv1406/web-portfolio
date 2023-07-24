@@ -52,7 +52,7 @@ body{
 /* Sidebar CSS effects starts*/
 .main-container .sidebar {
   font-family: "aquatico", "Concert One", cursive;
-  background-color: black;
+  background-color: #111827;
   width: 200px;
   padding-top: 60px;
   transition: transform 0.3s ease-out;
@@ -65,6 +65,21 @@ body{
   overflow-x: hidden;
 }
 
+#sidebar-links{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+#sidebar-github, #sidebar-linkedIn{
+  height:30px;
+  width:30px;
+}
+
+.hamburger{
+  display: none;
+}
+
 .hamburger .cross {
   position: absolute;
   cursor: pointer;
@@ -72,7 +87,12 @@ body{
   left: 10px;
   /* left: 170px; */
   font-size: 2em;
-  color: #ffa500;
+  color: #9333EA;
+  transition: transform 0.3s ease;
+}
+
+.cross:hover{
+  transform: translateY(-3px);
 }
 
 .sidebarGo {
@@ -99,56 +119,64 @@ body{
 }
 
 .main-container .sidebar li a:hover {
-  background: #ffa500;
+  background: #9333EA;
   border-radius: 10px 70px 10px 70px;
-  color: black;
+  
 }
 
 
 .main {
   width: 100%;
-  background-color: black;
+  background-color: #111827;
   position: relative;
-  padding-bottom: 10.5%;
+  /* padding-bottom: 10.5%; */
   
 }
 
 .navBar {
-  background-color: black;
+  background-color: #111827;
   display: flex;
-  height: 60px;
+  justify-content: space-between;
+  height: 90px;
   position:sticky;
   z-index: 1;
   top: 0;  
+  padding-top: 10px;
 }
+
+
 
 .navBar .title {
   font-family: "aquatico", "Concert One", cursive;
-  color: #ffa500;
+  color: #9333EA;
   font-weight: bolder;
-  flex: 0.3;
-  padding: 15px 0 0 20px;
-  font-size: 1.3em;
+  flex: 0.28;
+  padding: 15px 0 0 130px;
+  font-size: 1.5em;
 }
 
 
 
 .navBar .hamburger i {
-  /* color: white; */
   position: absolute;
-  top: 15px;
-  right: 20px;
-  /* margin-top: 15px; */
+  top: 34px;
+  right: 45px;
   cursor: pointer;
 }
 
 .navBar .hamburger .ham {
-  color: #ffa500;
+  color: #9333EA;
   font-size: 1.7em;
+  transition: transform 0.3s ease;
+}
+
+.ham:hover{
+  transform: translateY(-3px);
 }
 
 .navBar .mainMenu {
   margin-top: 20px;
+  margin-right: 75px;;
   flex: 0.4;
 }
 .mainMenu .sidebarList {
@@ -162,27 +190,35 @@ body{
   list-style: none;
 }
 
-.mainMenu .sidebarList li a {
+.sidebarList li a {
   display: block;
   font-family: "aquatico", "Concert One", cursive;
   text-decoration: none;
   color: white;
-  padding: 0 15px 5px 15px;
-  font-size: 12.3px;
+  padding: 0 0 5px 0;
+  font-size: 16px;
   font-weight: bolder;
+  transition: transform 0.3s ease;
 }
 
-.mainMenu .sidebarList li a:hover {
-  padding: 0 15px 10px 15px;
-  /* background-color: red; */
-  border-radius: 0 0 12px 12px;
-  border-bottom: 2px solid #ffa500;
-  color: #ffa500;
+.sidebarList li .checked{
+  color: white;
+  padding: 0 0 5px 0;
+  border-bottom: solid 2px #9333EA;
+}
+
+.sidebarList li .clicked-link{
+  color: white;
+}
+
+.mainMenu .sidebarList li a:not(.checked):hover {
+  color: white;
+  transform: translateY(-5px);
 }
 
 /* additional */
 .main .introContent {
-  padding: 80px 0 110px;
+  padding: 65px 0 110px;
 }
 
 .main .introContent .intro {
@@ -193,24 +229,33 @@ body{
 }
 .introContent .intro .introTag {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  padding-left: 20px;
+  background-color: #9333EA;
+  color:white;
+  font-weight: bolder;
+  font-size: 1.4em;
+  margin-left: 20px;
+  padding: 17px;
+  border-radius: 56% 97% 68% 66% / 108% 82% 73% 45%;
   
 }
 
 .introContent .intro .name {
   font-weight: 700;
-  font-size: 4em;
+  font-size: 3.5em;
   padding-left: 13px;
-  border-left: 5px solid #ffa500;
+  border-left: 5px solid #9333EA;
   border-radius: 10px;
-  
+  margin-top: 15px;
+}
+
+.name span{
+    color:#9333EA;
 }
 
 .dot {
   height: 8px;
   width: 8px;
-  background-color: #ffa500;
+  background-color: #9333EA;
   border-radius: 50%;
   display: inline-block;
   margin-left:3px;
@@ -229,12 +274,12 @@ body{
 }
 
 .buttons button {
+  transition: transform 0.3s ease;
   border: 0 solid white;
   border-radius: 15px;
   padding: 4px 20px;
   font-size: 1.2em;
   font-weight: 600;
-
   color: black;
 }
 
@@ -243,15 +288,14 @@ body{
     color: black;
 }
 
-.buttons .resume {
-  margin-left: 17px;
+
+.buttons button:hover {
+  transform: translateY(-6px);
+  border-bottom: 2px solid white;
+  background-color: #9333EA; 
+  /* color:white;  */
 }
 
-.intro .buttons button:hover {
-  transform: scale(1.1);
-  border-bottom: 2px solid white;
-  background-color: #ffa500;
-}
 
 .introContent .imgdiv {
   text-align: center;
@@ -262,10 +306,136 @@ body{
   /* position: absolute; */
   max-width: 100%;
   max-height: 340px;
-  border: 5px solid #ffa500;
+  /* border: 5px solid #9333EA; */
   border-radius: 67% 32% 48% 52% / 76% 75% 26% 26%;
-  /* box-shadow: 3px 5px  */
 }
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 35px;
+  right: 45px;
+  display: none;
+}
+
+#btn-github, #btn-linkedIn{
+  position:fixed;
+  left: 60px;
+  height: 30px;
+  width:30px;
+  transition: transform 0.3s ease;
+}
+
+#btn-github{
+  top:44%;
+}
+#btn-github:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 3px 10px black;
+}
+
+#btn-linkedIn{
+  top:54%;
+}
+
+#btn-linkedIn:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 3px 10px black;
+}
+
+
+/* footer section  */
+
+.footer-contact{
+  padding: 4em 0 4em;
+  background-color: black;  
+}
+.contactSec{
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  margin : 0 10%;
+  gap : 20px;
+}
+.contactSec .contact-info{
+  flex: 1;
+  color: white;
+}
+.contactSec .contact-info .contact-info-sec{
+  width: 65%;
+}
+
+.contactSec .contact-info .name{ 
+  font-family: "Dosis", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+.contactSec .contact-info .aboutMe{
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.contactSec .contact-links{
+  display: flex;
+  gap : 10px;
+  flex:0.8;
+}
+.contact-links .important{
+  flex: 0.7;
+  color: white;
+}
+.contact-links .important .importantLink{
+  font-size: 1.1rem;
+  font-weight: bolder;  
+}
+
+/* .contactSec .important .importantLink{
+} */
+
+.contact-links .important ul{
+  cursor: pointer;
+  line-height: 2;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.contact-links .important ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.contact-links .important ul li a:hover{
+  border-bottom: 2px solid white;
+}
+
+.contact-links .socials{
+  color: white;
+  flex: 1;  
+}
+
+.contact-links .socials .contact-Info{
+  font-size: 1.1rem;
+  font-weight: bolder;  
+}
+
+.contact-links .socials ul{
+  font-family: "Poppins", sans-serif;
+  line-height: 2;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 0;
+}
+
 
 /* .bottom {
    margin-top: 15%;
@@ -281,49 +451,100 @@ body{
   .navBar .title {
     display: none;
   }
+
+  .hamburger{
+    display:block;
+  }
   .navBar .mainMenu {
     margin-top: 20px;
     flex: 0.6;
+    padding-left: 25px;
   }
   .introContent .intro .name {
-    font-size: 3.3em;
+    font-size: 3.2em;
   }
 
   .introContent .intro .introPara {
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
   .mainImg {
     max-height: 340px;
+  }
+  #btn-linkedIn, #btn-github{
+    display: none;
+  }
+
+  .contactSec{
+    margin : 0 8%;
+  }
+
+  .contactSec .contact-info .contact-info-sec{
+    width: 100%;
+  }
+
+  .contactSec .contact-info .name{ 
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  .contactSec .contact-links{
+    gap : 0;
+    flex:1.2;
+  }
+
+  .contact-links .important .importantLink{
+    font-size: 1rem; 
+  }
+
+  .contact-links .socials .contact-Info{
+    font-size: 1rem; 
   }
 }
 
 @media (max-width: 768px) {
   .navBar .title {
     display: block;
+    padding-left: 45px;
   }
   .navBar .mainMenu {
     display: none;
   }
-  .introTag {
-    font-weight: 600;
-  }
 
+  .introContent .intro .introTag {
+    font-weight: 600;
+    font-size: 1em;
+  }
+  
   .introContent .intro .name {
     font-size: 3em;
   }
-
+  
   .introContent .intro .introPara {
-    font-size: 1em;
+    font-size: 1.1em;
   }
+
+  .contactSec{
+    flex-direction: column;
+    margin: 0 12%;
+  }
+
+
+  .contactSec .contact-info .contact-info-sec{
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 450px) {
   .main-container .main .introContent .intro .name {
     font-size: 2.3em;
   }
-  .introTag {
-    font-size: 15px;
+  .main-container .main .introContent .intro .introTag {
+    /* font-weight: 600; */
+    font-size: 1.1em;
+    padding: 10px 15px;
   }
+  
   .main-container .main .introContent .intro .introPara {
     font-size: 0.9em;
   }
@@ -333,5 +554,23 @@ body{
   }
   .mainImg {
     max-height: 250px;
+  }
+
+  .contactSec .contact-links{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-links .important ul{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+}
+
+@media (max-width: 387px){
+  .main-container .main .introContent .intro .name {
+    font-size: 1.9em;
   }
 }

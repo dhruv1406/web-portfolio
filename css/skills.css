@@ -1,51 +1,79 @@
 
 /* Skills page CSS effects starts here*/
 
+.mySkillsMainDiv{
+    padding: 80px 0;
+
+}
+
 .mySkillsDiv{
-    /* margin: 5% 0; */
-    padding: 5% 5% ;
+    margin: 2% 10% 8% 10%;
 }
 
 .mySkillsDiv .mySkills{
     text-align: center;
+    /* display:inline-block; */
 }
+
 
 .mySkills .mySkillsHead{
-    color: white;
+    color: #9333ea;
+    background-color: white;
+    display:inline-block;
     font-weight: bolder;
+    font-size: 2.5em;
     font-family: "aquatico", "Concert One", cursive;
-    padding-bottom: 30px;
+    padding: 30px;
+    border-radius:67% 32% 48% 52% / 76% 75% 26% 26%;
 }
-
-
-.mySkills .mySkillsIntro{
-    
-    font-size: 1em;
+/* 
+.mySkills .skills--tag{
     color: white;
-    font-family: "Poppins", sans-serif;
-}
+    background-color: #9333ea;
+    display:inline-block;
+    font-weight: bolder;
+    font-size: 1em;
+    padding:15px;
+    border-radius:67% 32% 48% 52% / 76% 75% 26% 26%;
+    transform: rotate(-20deg);
+    position: absolute;
+} */
+
 .skillMain{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap : 12px;
+    margin-top: 8%;
 }
 .skillMain .mySkillsCol{
-    flex: 24%;
-    text-align: center;
+    background-color: #111827;
+    width: 120px;
+    height: 120px;
+    text-align: center; 
+    border-radius: 5px; 
+    box-shadow: 4px 6px 9px #0c111b;
+    transition: transform 0.3s ease;
 }
 .mySkillsCol .skillsList{
-    
-    margin: 5px 5px;
+    padding: 10px;
     
 }
 
-.mySkillsCol .skillsIcons{
-    border: 1px solid white;
-    border-radius: 15px;
-    padding: 25px 0;
-    font-size: 5em;
-    color: #ffa500;
-    display: block;
-    
+.mySkillsCol:hover{
+    transform : translateY(-8px);
+}
+.skillsList .skill-name{
+    display:inline-block;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.skills-icons{
+    height: 80px;
+    width: 80px;
 }
 
 .mySkillsCol .skillsIcons .skillsName{
@@ -57,23 +85,18 @@
 }
 
 
-.mySkillsCol .skillsIcons:hover{
-    background-color:#ffa500;
-    color: black;
-    
 
-}
 @media screen and (max-width: 992px) {
-    .skillMain .mySkillsCol{
+    /* .skillMain .mySkillsCol{
       margin: 5px;
       flex: 48%;
-    }
+    } */
   }
   
   
   @media screen and (max-width: 600px) {
-    .skillMain{
-      flex-direction: column;
+    .mySkills .mySkillsHead{
+        font-size: 2em;
     }
     
   }

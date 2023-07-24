@@ -1,83 +1,143 @@
 .projectDiv{
-  padding: 5% 0;
+  padding: 8% 0;
 }
 
 
 .projectHead h1 {
-  font-size: 2rem;
+  font-family: "aquatico", "Concert One", cursive;
+  font-size: 3rem;
   color: white;
   margin: auto;
   font-weight: bolder;
   text-align: center;
 }
+
 .projectContent{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 5% 6%;
+  padding-top: 8%;
 }
 
-.projectContent .contentMain {
-  flex:23%;
-  margin: 0 5px;
-  position: relative;
+
+.contentMain{
+  display: flex;  
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom:10rem;
+  /* border : 1px solid white; */
+}
+
+.contentMain .right b{
+  color: skyblue;
+}
+
+.contentMain:nth-child(even){
+  flex-direction: row-reverse;
+}
+
+.contentMain .left{
+  /* border : 1px solid white;   */
+  flex:0.6;
+  margin-right: 20px;
+}
+
+.contentMain .right{
+  /* border : 1px solid white;   */
+  flex : 1;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 700;
+  padding: 0 1.5rem;
+  /* border-radius: 12px; */
+}
+
+.contentMain:nth-child(even) .right{
+  margin-left: -20px;
+  margin-right: 20px;
+}
+
+.contentMain:nth-child(even) .left{
+  margin-left: -20px;
+}
+
+.contentMain .left .img{
+  height: 250px;
+  width:450px;
   overflow: hidden;
-  text-align: center;
-  border: 1px solid white;
-  border-radius: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px black; 
+  
 }
 
-.contentMain video {
+.contentMain .left .img img{
   object-fit: cover;
   width: 100%;
-  opacity: 0.7;
+  height: 100%;
+  transition: transform 0.3s ease;
+  opacity: 0.9;
 }
 
-.content {
-  position: absolute;
-  display: grid;
-  align-content: center;
-  height:100%;
-  top:0;
-  left: 0;
-  z-index: -2;
-  color: white;
+.contentMain .right h4{
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #9333ea;
+  font-size: 20px;
   font-weight: bolder;
-  padding: 5px;
-  border-radius: 15px;
+  padding: 6px;
 }
 
-.content h4 {
-  font-size: 1.2rem;
-  font-weight: bolder;
-  color: #ffa500;
-}
-
-.content p {
-  font-size: 10px;
-  font-weight: bolder;
-  padding: 0 10px;
-}
-
-.contentMain:hover .content {
-  z-index: 1;
-}
-
-.contentMain:hover video {
-
-  opacity: 0.2;
+.contentMain .right p{
+  font-size: 1em;
+  margin-bottom : 0.5em !important;
 }
 
 
 @media screen and (max-width: 992px) {
-  .projectContent .contentMain{
-    margin: 5px;
-    flex: 48%;
+  .projectContent{
+    margin: 2% 7%;
   }
+  
+  .contentMain{
+    /* display: flex; */
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+
+
+  .contentMain:nth-child(even){
+    flex-direction: column;
+  }
+
+  .contentMain .left{
+    margin-right: 0;
+  }
+
+  .contentMain .right{
+    padding: 2.5em 1.5em;
+    text-align: center;
+  }
+
+  .contentMain:nth-child(even) .right{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .contentMain:nth-child(even) .left{
+    margin-left: 0;
+  }
+
+  
 }
 
 
-@media (max-width: 600px) { 
-  .projectContent {
-    flex-direction: column;
+@media (min-width: 275px) { 
+  .contentMain .left .img{
+    height: 1%;
+    width: 100%;
+    
+  } 
+  .contentMain .right p{
+    font-size: 0.9em;
   }
 }

@@ -35,43 +35,68 @@
           <li class="aboutMe"><a href="#aboutMe">ABOUT</a></li>
           <li class="skills"><a href="#skills">SKILLS</a></li>
           <li class="projects"><a href="#project">PROJECTS</a></li>
-          <li class="contact"><a href="#contact">CONTACT</a></li>
+          <!-- <li class="contact"><a href="#contact">CONTACT</a></li> -->
         </ul>
+        <div id="sidebar-links">
+          <a href="https://github.com/dhruv1406" target="_blank" id="sidebar-github" >
+            <svg fill="none" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M15.748 24.947c8.342-.24 9.163-1.997 9.163-11.966 0-11-1-12-12-12s-12 1-12 12c0 9.995.826 11.734 9.228 11.968a.503.503 0 0 0 .1-.32c0-.25-.01-2.817-.015-3.7-3.037.64-3.678-1.419-3.678-1.419-.497-1.222-1.213-1.548-1.213-1.548-.99-.656.075-.643.075-.643 1.096.075 1.673 1.091 1.673 1.091.974 1.617 2.556 1.15 3.178.88.1-.684.381-1.15.693-1.415-2.425-.267-4.974-1.175-4.974-5.23 0-1.155.426-2.099 1.124-2.839-.113-.268-.487-1.344.107-2.8 0 0 .917-.285 3.003 1.084a10.755 10.755 0 0 1 2.734-.356c.927.004 1.861.121 2.734.356 2.085-1.369 3-1.084 3-1.084.596 1.456.221 2.532.108 2.8.7.74 1.123 1.684 1.123 2.84 0 4.064-2.553 4.96-4.986 5.22.392.327.741.973.741 1.96a1298.915 1298.915 0 0 1-.013 4.802c0 .11.03.224.095.32Z" fill="#fffcfc" fill-rule="evenodd" class="fill-000000"></path></svg>
+          </a>  
+  
+          <!-- LinkedIn button  -->
+          <a href="https://www.linkedin.com/in/dhrubajit-konwar/" target="_blank" id="sidebar-linkedIn">
+            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="g5891"><path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;"/><g id="shapes"><rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667"/><path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0" style="fill:#fff;fill-rule:nonzero;"/><path d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z" id="path15" style="fill:#fff;fill-rule:nonzero;"/></g></g></svg>
+          </a>
+        </div>
       </div>
 
       <div class="main" id="main">
-        <div class="navBar">
+
+        <!-- Navbar Section Starts here -->
+        <nav class="navBar" id="navbar-main">
           <div class="title">PORTFOLIO</div>
           <div class="mainMenu">
             <ul class="sidebarList">
-              <li class="home"><a href="#">HOME</a></li>
-              <li class="aboutMe"><a href="#aboutMe">ABOUT ME</a></li>
-              <li class="skills"><a href="#skills">SKILLS</a></li>
-              <li class="projects"><a href="#project">PROJECTS</a></li>
-              <li class="contact"><a href="#contact">CONTACT</a></li>
+              <li class="home">
+                <a class="nav-items checked nav-link" href="#heroSec">HOME</a>
+              </li>
+              <li class="aboutMe">
+                <a class="nav-items nav-link" href="#aboutSec">ABOUT</a>
+              </li>
+              <li class="skills">
+                <a class="nav-items nav-link" href="#skillsSec">SKILLS</a>
+              </li>
+              <li class="projects">
+                <a class="nav-items nav-link" href="#projectsSec">PROJECTS</a>
+              </li>
+              <!-- <li class="contact">
+                <a class="nav-items nav-link" href="#contactSec">CONTACT</a>
+              </li> -->
             </ul>
           </div>
           <div class="hamburger">
             <i class="fa-solid fa-bars ham"></i>
           </div>
-        </div>
-
+        </nav>
+        <!-- Navbar section ends here -->
+        
         <!-- Hero Page start here -->
-        <div class="container-fluid">
-          <div class="row introContent">
-            <div class="col-lg-6">
-              <!-- Introduction part end -->
-              <div class="intro">
-                <h4 class="introTag">Hi There I'm</h4>
-                <h1 class="name">Dhrubajit Konwar<span class="dot"></span></h1>
+        <section id="heroSec">
+          <div class="container">
+            <div class="row introContent">
+              <div class="col-lg-6">
+                <!-- Introduction part end -->
+                <div class="intro">
+                <span class="introTag">Hi There I'm</span>
+                <h1 class="name">
+                  Dhrubajit Konwar<span class="dot"></span>
+                </h1>
                 <p class="introPara">
-                  An aspiring Software Developer passionate about exploring,
-                  learning and creating new things.
+                  An aspiring Frontend Developer with a strong passion for
+                  crafting beautiful and engaging web experiences. And an ardent
+                  learner who is always creating and learning awesome stuff.
+                  Let's start scrolling and learn more about me.
                 </p>
                 <div class="buttons">
-                  <button class="contactMe">
-                    <a href="#aboutMe">Learn More</a>
-                  </button>
                   <button class="resume">
                     <a href="resume.pdf" target="_blank">Download CV</a>
                   </button>
@@ -89,10 +114,12 @@
             </div>
           </div>
         </div>
+        </section>
         <!-- hero page ends here -->
 
         <!-- about me page start here -->
-        <div class="container-fluid" id="aboutMe">
+        <section id="aboutSec">
+        <div class="container" id="aboutMe">
           <div class="mainAboutDiv">
             <div class="row reverse">
               <div class="col-lg-6">
@@ -102,14 +129,19 @@
                   </h2>
                   <p class="aboutIntro">
                     Namaste <i class="fa-solid fa-hands-praying"></i> , I am
-                    Dhrubajit Konwar. An aspiring software developer. I am
-                    passionate about exploring, learning and creating web and
-                    responsive websites. I have worked on some projects where I
-                    have utilized my skills to checked my abilities. I love to
-                    listen to slow reverb songs while I am coding. Currently
-                    looking for an organization where I can join and utilize my
-                    skills and abilities to help both the company and myself
-                    grow and excel in the field.
+                    <b>Dhrubajit Konwar</b>. An aspiring Frontend developer. I
+                    have a deep fascination for the ever-evolving world of web
+                    technologies and enjoy staying up-to-date with the latest
+                    frontend frameworks, libraries, and best practices. Through
+                    continuous learning and experimentation, I seek to expand my
+                    knowledge and push the boundaries of what can be achieved on
+                    the web. Here, you'll find a collection of my projects that
+                    highlight my skills and creativity. Each project is a
+                    testament to my dedication to clean code, intuitive user
+                    interfaces, and optimal performance. I am excited to
+                    continue my journey as a frontend developer, eager to tackle
+                    new challenges, contribute to meaningful projects, and make
+                    a positive impact through technology.
                   </p>
                 </div>
               </div>
@@ -117,7 +149,7 @@
                 <div class="aboutImgDiv">
                   <img
                     class="aboutImg"
-                    src="pics/dhruvImg.png"
+                    src="pics/dhruvImg.webp"
                     alt="dhrubajit_img"
                   />
                 </div>
@@ -125,116 +157,153 @@
             </div>
           </div>
         </div>
+        </section>
         <!-- about me page ends here -->
 
         <!-- skills page start here -->
+        <section id="skillsSec">
         <div class="mySkillsMainDiv" id="skills">
           <div class="mySkillsDiv">
             <div class="mySkills">
-              <h2 class="mySkillsHead">SKILLS? Got Some...</h2>
+              <span class="mySkillsHead">Skills</span>
             </div>
             <div class="skillMain">
               <div class="mySkillsCol">
                 <div class="skillsList">
-                  <i class="fa-brands skillsIcons fa-html5"
-                    ><p class="skillsName">HTML</p></i
-                  >
+                  <img class="skills-icons" src="./pics/html.svg" alt="html">
+                  <span class="skill-name">HTML</span>
                 </div>
               </div>
               <div class="mySkillsCol">
                 <div class="skillsList">
-                  <i class="fa-brands skillsIcons fa-css3-alt">
-                    <p class="skillsName">CSS</p>
-                  </i>
+                  <img class="skills-icons" src="./pics/css.svg" alt="css">
+                  <span class="skill-name">CSS</span>
                 </div>
               </div>
               <div class="mySkillsCol">
                 <div class="skillsList">
-                  <i class="fa-brands skillsIcons fa-square-js">
-                    <p class="skillsName">JAVASCRIPT</p>
-                  </i>
+                  <img class="skills-icons" src="./pics/bootstrap.svg" alt="bootstrap">
+                  <span class="skill-name">BOOTSTRAP</span>
                 </div>
               </div>
-            
               <div class="mySkillsCol">
                 <div class="skillsList">
-                  <i class="fa-brands skillsIcons fa-react">
-                    <p class="skillsName">REACT</p>
-                  </i>
+                  <img class="skills-icons" src="./pics/javascript.svg" alt="javascript">
+                  <span class="skill-name">JAVASCRIPT</span>
                 </div>
               </div>
+
+              <div class="mySkillsCol">
+                <div class="skillsList">
+                  <img class="skills-icons" src="./pics/react.svg" alt="react">
+                  <span class="skill-name">REACT</span>
+                </div>
+              </div>
+              <div class="mySkillsCol">
+                <div class="skillsList">
+                  <img class="skills-icons" src="./pics/nextjs.svg" alt="nextJs">
+                  <span class="skill-name">NEXTJS</span>
+                </div>
+              </div>
+              <div class="mySkillsCol">
+                <div class="skillsList">
+                  <img class="skills-icons" src="./pics/mongoDb.svg" alt="mongoDb">
+                  <span class="skill-name">MONGODB</span>
+                </div>
+              </div>
+              <div class="mySkillsCol">
+                <div class="skillsList">
+                  <img class="skills-icons" src="./pics/github.svg" alt="github">
+                  <span class="skill-name">GITHUB</span>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
+        </section>
         <!-- skills page ends here -->
 
         <!-- Projects page start here -->
-        <div class="projectMain" id="project">
+        <section id="projectsSec">
+        <div class="container projectMain" id="project">
           <div class="projectDiv">
             <div class="projectHead">
               <h1>PROJECTS</h1>
             </div>
             <div class="projectContent">
-                <div class="contentMain">
-                  <video autoplay muted loop poster="cake.jpg">
-                    <source src="pics/DRUM-RYTHM.webm" type="video/webm" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <div class="content">
-                    <h4>DRUM-RYTHM</h4>
-                    <p>
-                      Designed and developed a website showcasing a wide range of drum kits using
-                      HTML, CSS, and JavaScript.
-                    </p>
+              <div class="contentMain">
+                <div class="left">
+                  <div class="img">
+                    <img src="./pics/nextjs.webp" alt="nextjs">
                   </div>
                 </div>
-                <div class="contentMain">
-                  <video autoplay muted loop poster="cake.jpg">
-                    <source src="pics/moviesland.webm" type="video/webm" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <div class="content">
-                    <h4>MOVIES-LAND</h4>
-                    <p>
-                      A React and CSS based website which returns the movies
-                      poster and other details like name, year and type on
-                      search by using API.
-                    </p>
+                <div class="right">
+                  <h4>YOUR-VENDORS</h4>
+                  <p>
+                    "Discover seamless vendor management with our web app! Built with <b>Next.js</b> and <b>MongoDB</b>, our platform allows users to effortlessly add, view, edit, and delete vendor details through a user-friendly interface, enabling smooth <b>CRUD</b> operations. 
+                    Experience secure logins and logouts for a seamless user experience with Google <b>OAuth</b> authentication."  
+                  </p>
+                  <a href="https://github.com/dhruv1406/nextjs" target="_blank"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="GitHub Repo"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></button></a>
+                  <a href="https://nextjs-dhruv1406.vercel.app/" target="_blank"><button class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Preview" style="margin-left:5px;"><i class="fa-solid fa-arrow-up-right-from-square fa-xl" style="color: #ffffff;"></i></button></a>
+                  
+                </div>
+              </div>
+              <div class="contentMain">
+                <div class="left">
+                  <div class="img">
+                    <img src="./pics/drum-rythm.webp" alt="drum-rythm">
                   </div>
                 </div>
-                <div class="contentMain">
-                  <video autoplay muted loop poster="cake.jpg">
-                    <source src="pics/components.webm" type="video/webm" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <div class="content">
-                    <h4>CARDS</h4>
-                    <p>
-                      A minor and simple project based on HTML CSS AND BOOTSTRAP
-                      to create new rating card, thank you card and product card details modal.
-                    </p>
+                <div class="right">
+                  <h4>DRUM-KIT</h4>
+                  <p>
+                    "Unleash your inner drummer with our interactive web app! Crafted using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>, our drum kit allows you to create beats effortlessly. Simply click with your mouse or press keys on your keyboard to trigger realistic drum sounds. Get ready to groove and play your rhythm in a fun and engaging way!"
+                  </p>
+                  <a href="https://github.com/dhruv1406/Drum-Rythm" target="_blank"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="GitHub Repo"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></button></a>
+                  <a href="https://dhruv1406.github.io/Drum-Rythm/" target="_blank"><button class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Preview" style="margin-left:5px;"><i class="fa-solid fa-arrow-up-right-from-square fa-xl" style="color: #ffffff;"></i></button></a>
+                </div>
+              </div>
+              <div class="contentMain">
+                <div class="left">
+                  <div class="img">
+                    <img src="./pics/movies-land.webp" alt="movies-land">
                   </div>
                 </div>
-                <div class="contentMain">
-                  <video autoplay muted loop poster="cake.jpg">
-                    <source src="pics/magic-notes.webm" type="video/webm" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <div class="content">
-                    <h4>MAGIC-NOTES</h4>
-                    <p>
-                      A simple and first project based on JavaScript and
-                      Bootstrap to create book store website and and Daily
-                      routines notes website.
-                    </p>
+                <div class="right">
+                  <h4>MOVIES-LAND</h4>
+                  <p>
+                    "Explore an immersive Movies List web app powered by <b>React</b>. Discover detailed movie information simply by searching for any movie title. Utilizing an <b>API</b>, the app fetches data including movie posters and titles, delivering a seamless experience. Accessible on <b>Vercel</b> for instant deployment and user-friendly access."
+                  </p>
+                  <a href="https://github.com/dhruv1406/react_movies_Land" target="_blank"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="GitHub Repo"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></button></a>
+                  <a href="https://react-movies-land.vercel.app/" target="_blank"><button class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Preview" style="margin-left:5px;"><i class="fa-solid fa-arrow-up-right-from-square fa-xl" style="color: #ffffff;"></i></button></a>
+                </div>
+              </div>
+              <div class="contentMain">
+                <div class="left">
+                  <div class="img">
+                    <img src="./pics/todoList.webp" alt="drum-rythm">
                   </div>
                 </div>
+                <div class="right">
+                  <h4>TODO-LIST</h4>
+                  <p>
+                    "Experience a sleek and efficient Todo List web app built with <b>JavaScript</b>, <b>HTML</b>, <b>CSS</b>, and <b>Bootstrap</b>. Organize your tasks effortlessly by adding and deleting items with ease. Stay productive and on top of your schedule with this user-friendly and responsive application."
+                  </p>
+                  <a href="https://github.com/dhruv1406/todoList-js-" target="_blank"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="GitHub Repo"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></button></a>
+                  <a href="https://dhruv1406.github.io/todoList-js-/" target="_blank"><button class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Preview" style="margin-left:5px;"><i class="fa-solid fa-arrow-up-right-from-square fa-xl" style="color: #ffffff;"></i></button></a>
+                </div>
+              </div>
+              
+              
             </div>
           </div>
         </div>
+        </section>
         <!-- projects page ends here -->
 
         <!-- Contact me page starts here -->
+        <!-- <section id="contactSec">
         <div class="container-fluid" id="contact">
           <div class="contactDiv">
             <div class="contactHeadDiv">
@@ -269,7 +338,6 @@
                         >
                           Click Here
                         </button>
-                        
                       </td>
                     </tr>
                     <tr>
@@ -282,19 +350,66 @@
             </div>
           </div>
         </div>
+        </section> -->
+        <!-- contact me page ends here -->
+
+        <!-- Footer Section starts here -->
+       <footer>
+        <div class="footer-contact">
+          <div class="contactSec">
+            <div class="contact-info">
+              <div class="contact-info-sec">
+                <h2 class="name">Dhrubajit Konwar</h2>
+                <p class="aboutMe">
+                  A Front-end Developer from Assam, India. I like to code things from scratch, and enjoy bringing ideas to life in the browser.
+                </p>
+              </div>
+           </div>
+            <div class="contact-links">
+              <div class="important">
+                <h5 class="importantLink">Important Links</h5>
+                <ul>
+                  <li><a href="#heroSec">Home</a></li>
+                  <li><a href="#aboutSec">About</a></li>
+                  <li><a href="#skillsSec">Skills</a></li>
+                  <li><a href="#projectsSec">Projects</a></li>
+                </ul>
+              </div>
+              <div class="socials">
+                <h5 class="contact-Info">
+                  Contact Info
+                </h5>
+                <ul>
+                  <li><i class="fa-solid fa-phone fa-md" style="color: #ffffff; padding-right: 5px;"></i> +91-6001443974</li>
+                  <li><i class="fa-solid fa-envelope fa-md" style="color: #ffffff; padding-right: 5px;"></i> dhruvkonwar65@gmail.com</li>
+                  <li><i class="fa-solid fa-location-dot fa-md" style="color: #ffffff; padding-right: 8px;"></i>Saket, New Delhi, 110017</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+        <!-- Footer section ends here  -->
       </div>
-      <div
-        class="modal fade"
-        id="contactModal"
-        tabindex="-1"
-        aria-hidden="true"
+
+      <!-- Contact modal section starts here -->
+      <!-- <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-ed">
-          <div class="modal-content alert">
-            <div class="container-fluid contactFormDiv" id="contactFormShow">
-              <img src="pics/icon-star.svg" alt="star" />
-              <span>Get In Touch.</span>
-              <form action="https://formsubmit.co/d1b0cfcb68a333f76468bb75a75a578b" method="POST">
+      <div class="modal-dialog modal-dialog-ed">
+        <div class="modal-content alert">
+          <div class="container-fluid contactFormDiv" id="contactFormShow">
+            <img src="pics/icon-star.svg" alt="star" />
+            <span>Get In Touch.</span>
+            <form
+            action="https://formsubmit.co/d1b0cfcb68a333f76468bb75a75a578b"
+            method="POST"
+            >
                 <div class="row g-3">
                   <div class="col-md-12">
                     <input
@@ -306,7 +421,7 @@
                       required
                     />
                   </div>
-    
+
                   <div class="col-md-12">
                     <input
                       type="email"
@@ -319,7 +434,7 @@
                   </div>
                   <div class="col-md-12">
                     <textarea
-                      class="form-control messageDiv"
+                    class="form-control messageDiv"
                       name="message"
                       id="yourMessage"
                       rows="4"
@@ -331,20 +446,46 @@
                       Send Message
                     </button>
                   </div>
-                  <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
-                  <input type="hidden" name="_template" value="table">
-                  <input type="hidden" name="_captcha" value="false">
-                  <input type="hidden" name="_next" value="https://dhruv1406.github.io/web-portfolio/">
+                  <input
+                    type="hidden"
+                    name="_blacklist"
+                    value="spammy pattern, banned term, phrase"
+                  />
+                  <input type="hidden" name="_template" value="table" />
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://dhruv1406.github.io/web-portfolio/"
+                  />
                 </div>
               </form>
             </div>
-            <!-- <h4 class="service">Oops!!! This service is not yet working.</h4> -->
           </div>
         </div>
-      </div>
-      <!-- contact me page ends here -->
-    </div>
+      </div> -->
+      <!-- Contact modal section ends here -->
+      
+      
+      <!-- Scroll-to-top button -->
+      <button
+      class="btn btn-outline-light btn-md"
+      id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+  
+      <!-- Github button -->
+      <a href="https://github.com/dhruv1406" target="_blank" id="btn-github" >
+        <svg fill="none" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M15.748 24.947c8.342-.24 9.163-1.997 9.163-11.966 0-11-1-12-12-12s-12 1-12 12c0 9.995.826 11.734 9.228 11.968a.503.503 0 0 0 .1-.32c0-.25-.01-2.817-.015-3.7-3.037.64-3.678-1.419-3.678-1.419-.497-1.222-1.213-1.548-1.213-1.548-.99-.656.075-.643.075-.643 1.096.075 1.673 1.091 1.673 1.091.974 1.617 2.556 1.15 3.178.88.1-.684.381-1.15.693-1.415-2.425-.267-4.974-1.175-4.974-5.23 0-1.155.426-2.099 1.124-2.839-.113-.268-.487-1.344.107-2.8 0 0 .917-.285 3.003 1.084a10.755 10.755 0 0 1 2.734-.356c.927.004 1.861.121 2.734.356 2.085-1.369 3-1.084 3-1.084.596 1.456.221 2.532.108 2.8.7.74 1.123 1.684 1.123 2.84 0 4.064-2.553 4.96-4.986 5.22.392.327.741.973.741 1.96a1298.915 1298.915 0 0 1-.013 4.802c0 .11.03.224.095.32Z" fill="#fffcfc" fill-rule="evenodd" class="fill-000000"></path></svg>
+      </a>  
+  
+      <!-- LinkedIn button  -->
+      <a href="https://www.linkedin.com/in/dhrubajit-konwar/" target="_blank" id="btn-linkedIn">
+        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="g5891"><path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;"/><g id="shapes"><rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667"/><path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0" style="fill:#fff;fill-rule:nonzero;"/><path d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z" id="path15" style="fill:#fff;fill-rule:nonzero;"/></g></g></svg>
+      </a>
 
+    </div>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
@@ -360,16 +501,8 @@
       integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
       crossorigin="anonymous"
     ></script>
-    <script src="js/index.js"></script><script src="https://smtpjs.com/v3/smtp.js">
+    <script src="js/index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     </script>
-
-<!--     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
-    <script>
-      VanillaTilt.init(document.querySelectorAll(".skillsIcons"), {
-        max: 25,
-        speed: 400,
-        scale: 1.1,
-      });
-    </script> -->
   </body>
 </html>
